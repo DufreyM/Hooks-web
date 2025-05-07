@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('eevee.jpeg'); 
+  background-size: auto;
+  background-position: top left; 
+  background-repeat: repeat; 
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stopwatch-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f5e3c1;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 100px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+/* Título */
+.stopwatch-title {
+  font-size: 3rem;
+  color: #5c3c1d;
+  margin-bottom: 1rem;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+/* Cronómetro */
+.stopwatch-display {
+  margin-bottom: 1.5rem;
+}
+
+.stopwatch-display h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #7e5c47;
+  margin: 0;
+}
+
+/* Botones */
+.stopwatch-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.start-stop-btn {
+  background-color: #f5a623;
+  color: white;
+}
+
+.start-stop-btn:hover {
+  background-color: #f1a300;
+}
+
+.reset-btn {
+  background-color: #7a57d1;
+  color: white;
+}
+
+.reset-btn:hover {
+  background-color: #9c7be7;
+}
+
+.save-btn {
+  background-color: #b3d9b4;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #99c99f;
+}
+
+/* Sesiones */
+.sessions-list {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.session-item {
+  background-color: #e6d1b3;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  color: #7e5c47;
+}
+
+.session-item:nth-child(odd) {
+  background-color: #f1e3d2;
+}
